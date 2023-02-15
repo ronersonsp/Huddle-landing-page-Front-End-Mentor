@@ -16,7 +16,7 @@ footer{
 footer *:hover{
   color: white;
 }
-.footer-img img{
+.footer-img{
   grid-column: span 3;
 }
 
@@ -109,7 +109,7 @@ address{
   .footer-img{
     max-width: 150px;
   }
-  .footer-img img,
+  .footer-img,
   .copy{
     grid-column: 1;
   }
