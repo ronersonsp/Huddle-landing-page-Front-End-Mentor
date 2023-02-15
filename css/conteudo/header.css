@@ -1,0 +1,38 @@
+.bg{
+  background: url("../../img/bg-hero-desktop.svg") no-repeat;
+  background-color: var(--n1);
+}
+.header{
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 15px 30px;
+  align-items: center;
+}
+.header .botao{
+  background-color: white;
+  color: var(--n2);
+  padding: 12px 54px;
+}
+.header .botao:hover{
+  color: var(--n3);
+}
+
+@media (max-width: 600px){
+  .header .botao{
+    padding: 8px  27px;
+  }
+  .header-img{
+    max-width: 150px;
+  }
+}
+@media (max-width: 450px){
+  .header .botao{
+    font-size: 0.875rem;
+    padding: 4px  20px;
+  }
+  .header-img{
+    max-width: 100px;
+  }
+}

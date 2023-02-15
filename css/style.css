@@ -1,0 +1,11 @@
+@import "./global/global.css";
+@import "./global/cores.css";
+@import "./global/tipografia.css";
+@import "./global/utilidades.css";
+
+
+@import "./conteudo/header.css";
+@import "./conteudo/main.css";
+@import "./conteudo/sobre.css";
+@import "./conteudo/ready.css";
+@import "./conteudo/footer.css";

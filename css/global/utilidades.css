@@ -1,0 +1,26 @@
+.container{
+ max-width: 1200px;
+ margin: 0 auto;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+.botao{
+  font: var(--font-2-b);
+  display: inline-block;
+  padding: 20px 80px;
+  background-color: var(--p1);
+  color: white;
+  border-radius: 30px;
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, .2);
+  white-space: nowrap;
+}
+.botao:hover{
+  background-color: var(--p1-hover);
+  color: var(--n1);
+}
+@media(max-width:500px){
+  .botao{
+    padding: 15px 40px;
+  }
+}

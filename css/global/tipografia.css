@@ -1,0 +1,23 @@
+:root{
+  --font-1: 600 2.5rem "Poppins";
+  --font-2: 400 1.15rem "Open Sans", sans-serif;
+  --font-2-b: 700 1rem "Open Sans", sans-serif;
+}
+.font-1{
+  font: var(--font-1);
+}
+.font-2{
+  font: var(--font-2);
+}
+.font-2-b{
+  font: var(--font-2-b);
+}
+
+@media (max-width: 500px){
+  .font-1{
+    font-size: 1.5rem;
+  }
+  .font-2{
+    font-size: 0.875rem;
+  }
+}

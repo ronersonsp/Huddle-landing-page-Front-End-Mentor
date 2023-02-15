@@ -1,0 +1,120 @@
+footer{
+  height: 350px;
+  background-color: var(--n2);
+  padding-top: 60px;
+}
+.footer{
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 60px;
+  
+}
+.footer *{
+  color: var(--n3);
+}
+footer *:hover{
+  color: white;
+}
+.footer-img img{
+  grid-column: span 3;
+}
+
+address{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px 10px;
+}
+
+
+.footer-info{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: 40px;
+  gap: 0px;
+  max-width: 300px;
+  
+  gap: 0px 80px;
+  white-space: nowrap;
+}
+.footer-info li a{
+  position: relative;
+}
+.footer-info li a::after{
+  display: block;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  transition: .3s ease-in-out;
+}
+.footer-info li a:hover::after{
+  width: 100%;
+}
+
+
+
+.footer-sociais a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  background-size: cover;
+  
+}
+.facebook{
+  background: url("../../img/ico-facebook.svg") no-repeat;
+}
+.facebook:hover{
+  background: url("../../img/ico-facebook-2.svg")no-repeat;
+  background-size: cover;
+}
+.twitter{
+  background: url("../../img/ico-twitter.svg")no-repeat;
+}
+.twitter:hover{
+  background: url("../../img/ico-twitter-2.svg")no-repeat;
+  background-size: cover;
+}
+.instagram{
+  background: url("../../img/ico-instagram.svg")no-repeat;
+}
+.instagram:hover{
+  background: url("../../img/ico-instagram-2.svg")no-repeat;
+  background-size: cover;
+}
+
+.copy{
+  grid-column: 3;
+  font-size: 0.875rem;
+}
+
+@media (max-width:1100px){
+  .footer-info{
+    gap: 0 40px;
+  }
+}
+@media (max-width: 800px){
+  .footer{
+    background-color: var(--n2);
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-bottom: 30px;
+  }
+  .footer-info{
+    grid-template-columns: 1fr;
+
+  }
+  .footer-img{
+    max-width: 150px;
+  }
+  .footer-img img,
+  .copy{
+    grid-column: 1;
+  }
+  .footer-sociais,
+  .copy{
+    justify-self: center;
+  }
+}
